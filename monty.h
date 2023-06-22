@@ -51,5 +51,6 @@ void my_pop(stack_t **t, unsigned int count);
 void my_swap(stack_t **t, unsigned int count);
 void my_mod(stack_t **t, unsigned int count);
 void my_pchar(stack_t **t, unsigned int count);
+void my_pstr(stack_t **t, unsigned int count);
 
 #endif
