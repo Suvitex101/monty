@@ -10,6 +10,24 @@
 #include <ctype.h>
 
 /**
+ * struct opc_s - variables -aurg, fl, ln content
+ * @aurg: value
+ * @fl: pointer to monty file
+ * @content: line content
+ * @lfi: flag change stack <-> queue
+ * Description: carries values through the program
+ */
+
+typedef struct opc_s
+{
+	char *aurg;
+	FILE *fl;
+	char *content;
+	int lf;
+} opc_t;
+extern opc_t opc;
+
+/**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
  * @prev: points to the previous element of the stack (or queue)
