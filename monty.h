@@ -43,5 +43,6 @@ void push_opc(stack_t **head, unsigned int num);
 void sub_opc(stack_t **head, unsigned int num);
 void nop_opc(stack_t **head, unsigned int num);
 void pall_opc(stack_t **head, unsigned int num);
+void mul_opc(stack_t **head, unsigned int num);
 
 #endif
