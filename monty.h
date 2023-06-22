@@ -39,5 +39,9 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+void push_opc(stack_t **head, unsigned int num);
+void sub_opc(stack_t **head, unsigned int num);
+void nop_opc(stack_t **head, unsigned int num);
+void pall_opc(stack_t **head, unsigned int num);
 
 #endif
