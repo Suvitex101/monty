@@ -48,6 +48,8 @@ void my_add(stack_t **t, unsigned int count);
 void my_div(stack_t **t, unsigned int count);
 void my_pint(stack_t **t, unsigned int count);
 void my_pop(stack_t **t, unsigned int count);
-void my_swap(stack_t **T, unsigned int coun);
+void my_swap(stack_t **t, unsigned int count);
+void my_mod(stack_t **t, unsigned int count);
+void my_pchar(stack_t **t, unsigned int count);
 
 #endif
