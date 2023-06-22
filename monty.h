@@ -39,5 +39,11 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+void my_pint(stack_t **t, unsigned int count)
+void my_pop(stack_t **t, unsigned int count)
+void my_swap(stack_t **t, unsigned int count)
+void my_add(stack_t **t, unsigned int count)
+void my_div(stack_t **t, unsigned int count)
+
 
 #endif
