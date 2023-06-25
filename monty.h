@@ -71,5 +71,6 @@ void my_swap(stack_t **t, unsigned int count);
 void my_mod(stack_t **t, unsigned int count);
 void my_pchar(stack_t **t, unsigned int count);
 void f_stack(stack_t *head);
+void my_pstr(stack_t **t, unsigned int count);
 
 #endif
