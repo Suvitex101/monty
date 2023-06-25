@@ -20,9 +20,9 @@ void mul_opc(stack_t **head, unsigned int num)
 	if (run < 2)
 	{
 		fprintf(stderr, "L%d: can't mul, stack too short\n", num);
-		fclose(bus.file);
-		free(bus.content);
-		free_stack(*head);
+		fclose(opc.fl);
+		free(opc.content);
+		f_stack(*head);
 		exit(EXIT_FAILURE);
 	}
 	run = *head;

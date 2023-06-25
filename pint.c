@@ -12,9 +12,9 @@ void my_pint(stack_t **t, unsigned int count)
 	if (*t == NULL)
 	{
 		fprintf(stderr, "L%u: can't pint, stack empty\n", count);
-		fclose(bus.file);
-		free(bus.content);
-		free_stack(*t);
+		fclose(opc.fl);
+		free(opc.content);
+		f_stack(*t);
 		exit(EXIT_FAILURE);
 	}
 	printf("%d\n", (*t)->n);

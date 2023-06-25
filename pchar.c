@@ -17,18 +17,18 @@ void my_pchar(stack_t **t, unsigned int count)
 	if (!p)
 	{
 		fprintf(stderr, "L%d: can't pchar, stack empty\n", count);
-		fclose(bus.file);
-		free(bus.content);
-		free_stack(*t);
+		fclose(opc.fl);
+		free(opc.content);
+		f_stack(*t);
 		exit(EXIT_FAILURE);
 	}
 
 	if (p->n > 127 || p->n < 0)
 	{
 		fprintf(stderr, "L%d: can't pchar, value out of range\n", count);
-		fclose(bus.file);
-		free(bus.content);
-		free_stack(*t);
+		fclose(opc.fl);
+		free(opc.content);
+		f_stack(*t);
 		exit(EXIT_FAILURE);
 	}
 

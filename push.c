@@ -11,32 +11,32 @@ void push_opc(stack_t **head, unsigned int num)
 	int b = 0;
 	int f = 0;
 
-	if (bus.arg)
+	if (opc.aurg)
 	{
-		if (bus.arg[0] == '-')
+		if (opc.aurg[0] == '-')
 			b++;
-		for (; bus.arg[b] != '\0'; b++)
+		for (; opc.aurg[b] != '\0'; b++)
 		{
-			if (bus.arg[b] > 57 || bus.arg[b] < 48)
+			if (opc.aurg[b] > 57 || opc.aurg[b] < 48)
 				f = 1; }
 		if (f == 1)
 		{
 			fprint(stderr, "L%d: usage: push integer\n", num);
-			fclose(bus.file);
-			free(bus.content);
-			free_stack(*head);
+			fclose(opc.fl);
+			free(opc.content);
+			f_stack(*head);
 			exit(EXIT_FAILURE);
 		}
 	}
 	else
 	{
 		fprintf(stderr, "L%d: usage: push integer\n", num);
-		fclose(bus.file);
-		free_stack(*head);
+		fclose(opc.fl);
+		f_stack(*head);
 		exit(EXIT_FAILURE);
 	}
-	n = atoi(bus.arg);
-	if (bus.lifi == 0)
+	n = atoi((opc.aurg);
+	if ((opc.lf == 0)
 		addnode(head, n);
 	else
 		addqueue(head, n);
@@ -89,9 +89,9 @@ void sub_opc(stack_t **head, unsigned int num)
 	if (nodes < 2)
 	{
 		fprintf(stderr, "L%d: can't sub, stack too short\n", num);
-		fclose(bus.file);
-		free(bus.content);
-		free_stack(*head);
+		fclose(opc.fl);
+		free(opc.content);
+		f_stack(*head);
 		exit(EXIT_FAILURE);
 	}
 	run = *head;

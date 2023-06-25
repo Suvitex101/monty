@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * my_div - function that divides the top two elements 
+ * my_div - function that divides the top two elements
  * of the stack by Implementing the div opcode.
  * @t: stack head
  * @count: line_number
@@ -23,9 +23,9 @@ void my_div(stack_t **t, unsigned int count)
 	if (len < 2)
 	{
 		fprintf(stderr, "L%d: can't div, stack too short\n", count);
-		fclose(bus.file);
-		free(bus.content);
-		free_stack(*t);
+		fclose(opc.fl);
+		free(opc.content);
+		f_stack(*t);
 		exit(EXIT_FAILURE);
 	}
 
@@ -33,9 +33,9 @@ void my_div(stack_t **t, unsigned int count)
 	if (p->n == 0)
 	{
 		fprintf(stderr, "L%d: division by zero\n", count);
-		fclose(bus.file);
-		free(bus.content);
-		free_stack(*t);
+		fclose(opc.fl);
+		free(opc.content);
+		f_stack(*t);
 		exit(EXIT_FAILURE);
 	}
 

@@ -14,7 +14,7 @@
  * @aurg: value
  * @fl: pointer to monty file
  * @content: line content
- * @lfi: flag change stack <-> queue
+ * @lf: flag change stack <-> queue
  * Description: carries values through the program
  */
 
@@ -62,9 +62,7 @@ void sub_opc(stack_t **head, unsigned int num);
 void nop_opc(stack_t **head, unsigned int num);
 void pall_opc(stack_t **head, unsigned int num);
 void mul_opc(stack_t **head, unsigned int num);
-<<<<<<< HEAD
 void pstr_opc(stack_t **head, unsigned int num);
-=======
 void my_add(stack_t **t, unsigned int count);
 void my_div(stack_t **t, unsigned int count);
 void my_pint(stack_t **t, unsigned int count);
@@ -72,6 +70,6 @@ void my_pop(stack_t **t, unsigned int count);
 void my_swap(stack_t **t, unsigned int count);
 void my_mod(stack_t **t, unsigned int count);
 void my_pchar(stack_t **t, unsigned int count);
->>>>>>> ef54c66fd96fce10bb80ef7343bb279736210222
+void f_stack(stack_t *head);
 
 #endif
