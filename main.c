@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	char *content;
 	FILE *file;
 	size_t size = 0;
-	ssize_t read_line = 1;
+	ssize_t r_line = 1;
 	stack_t *stack = NULL;
 	unsigned int counter = 0;
 
@@ -31,13 +31,13 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
 		exit(EXIT_FAILURE);
 	}
-	while (read_line > 0)
+	while (r_line > 0)
 	{
 		content = NULL;
-		read_line = getline(&content, &size, file);
+		r_line = getline(&content, &size, file);
 		opc.content = content;
 		counter++;
-		if (read_line > 0)
+		if (r_line > 0)
 		{
 			exec(content, &stack, counter, file);
 		}
