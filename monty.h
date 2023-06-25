@@ -72,5 +72,8 @@ void my_mod(stack_t **t, unsigned int count);
 void my_pchar(stack_t **t, unsigned int count);
 void f_stack(stack_t *head);
 void my_pstr(stack_t **t, unsigned int count);
+void add_queue(stack_t **head, int n);
+void f_queue(stack_t **head, unsigned int num);
+void add_nd(stack_t **head, int n);
 
 #endif

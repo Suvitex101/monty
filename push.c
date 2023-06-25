@@ -37,9 +37,9 @@ void push_opc(stack_t **head, unsigned int num)
 	}
 	n = atoi((opc.aurg);
 	if ((opc.lf == 0)
-		addnode(head, n);
+		add_nd(head, n);
 	else
-		addqueue(head, n);
+		add_queue(head, n);
 }
 /**
  * pall_opc - prints the stack
