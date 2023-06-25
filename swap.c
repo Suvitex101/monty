@@ -30,6 +30,6 @@ void my_swap(stack_t **t, unsigned int count)
 
 	p = *t;
 	aux = p->n;
-	p->n = p->next->p;
+	p->n = p->next->n;
 	p->next->n = aux;
 }

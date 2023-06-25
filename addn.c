@@ -21,7 +21,7 @@ void add_nd(stack_t **head, int n)
 		exit(0);
 	}
 	if (run)
-		aux->prev = new;
+		run->prev = new;
 	new->n = n;
 	new->next = *head;
 	new->prev = NULL;

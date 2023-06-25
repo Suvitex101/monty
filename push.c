@@ -21,7 +21,7 @@ void push_opc(stack_t **head, unsigned int num)
 				f = 1; }
 		if (f == 1)
 		{
-			fprint(stderr, "L%d: usage: push integer\n", num);
+			fprintf(stderr, "L%d: usage: push integer\n", num);
 			fclose(opc.fl);
 			free(opc.content);
 			f_stack(*head);
@@ -35,8 +35,8 @@ void push_opc(stack_t **head, unsigned int num)
 		f_stack(*head);
 		exit(EXIT_FAILURE);
 	}
-	n = atoi((opc.aurg);
-	if ((opc.lf == 0)
+	n = atoi((opc.aurg));
+	if ((opc.lf == 0))
 		add_nd(head, n);
 	else
 		add_queue(head, n);
@@ -96,7 +96,7 @@ void sub_opc(stack_t **head, unsigned int num)
 	}
 	run = *head;
 	sub = run->next->n - run->n;
-	run->next->n = sus;
+	run->next->n = sub;
 	*head = run->next;
 	free(run);
 }

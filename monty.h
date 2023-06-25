@@ -78,5 +78,6 @@ void add_nd(stack_t **head, int n);
 void rotl_opc(stack_t **head,  __attribute__((unused)) unsigned int num);
 void rotr_opc(stack_t **head, __attribute__((unused)) unsigned int num);
 void stack_opc(stack_t **head, unsigned int num);
+int exec(char *content, stack_t **stack, unsigned int counter, FILE *file);
 
 #endif

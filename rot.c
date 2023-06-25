@@ -14,8 +14,8 @@ void rotl_opc(stack_t **head,  __attribute__((unused)) unsigned int num)
 	{
 		return;
 	}
-	num = (*head)->next;
-	num->prev = NULL;
+	run = (*head)->next;
+	run->prev = NULL;
 	while (tmp->next != NULL)
 	{
 		tmp = tmp->next;

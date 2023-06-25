@@ -17,7 +17,7 @@ void mul_opc(stack_t **head, unsigned int num)
 		run = run->next;
 		count++;
 	}
-	if (run < 2)
+	if (count < 2)
 	{
 		fprintf(stderr, "L%d: can't mul, stack too short\n", num);
 		fclose(opc.fl);
